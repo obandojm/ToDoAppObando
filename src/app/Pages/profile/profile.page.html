@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="end">
+      <ion-button (click)="closeProfile()">CLOSE</ion-button>
+    </ion-buttons>
+    <ion-title>{{currentUser._name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="home">
+  <div class="card">
+    <div class="header">
+      <div class="avatar">
+        <img src="../../assets/avatar.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="user-meta ion-text-center">
+      <h3 class="surname">{{currentUser._name}}</h3>
+      <h5 class="email">{{currentUser._surname}}</h5>
+    </div>
+    <ion-button expand="full" color="primary">{{currentUser._email}}</ion-button>
+  </div>
+
+</ion-content>

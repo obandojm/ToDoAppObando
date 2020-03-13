@@ -1,0 +1,18 @@
+<ion-content>
+  <ion-content class="home auth-form">
+    <ion-grid>
+      <ion-row>
+        <ion-col align-self-center>
+          <img src="assets/Icono.png" style="display:block; margin:auto; padding-top: 15%;">
+          <img src="assets/Name.png" style="display:block; margin:auto; padding-top: 6%; padding-bottom: 6%;">
+          <ion-button [routerLink]="['/register']" expand="block" color="primary">Register</ion-button>
+  
+          <span class="divider line one-line">or</span>
+  
+          <span class="already">Already a user?</span>
+  
+          <ion-button [routerLink]="['/login']" expand="block" color="danger">Sign In</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>

@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="end">
+      <ion-button (click)="closeAddToDo()">CLOSE</ion-button>
+    </ion-buttons>
+    <ion-title>ADD TODO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="home">
+  <ion-item>
+    <ion-input [(ngModel)]="msg"></ion-input>
+    <ion-button (click)= "addToDo()">Submit</ion-button>
+  </ion-item>
+</ion-content>
